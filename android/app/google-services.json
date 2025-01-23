@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "470370537043",
+    "project_id": "onlinenew",
+    "storage_bucket": "onlinenew.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470370537043:android:dafb859a9a6e42775140a6",
+        "android_client_info": {
+          "package_name": "com.example.onlinenew"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0D5B5eNvmS-E0GHJtlTN5R91pzgYuExU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
