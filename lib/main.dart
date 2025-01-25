@@ -1,8 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:onlinenew/api/firebase-api.dart';
+import 'package:onlinenew/logic/fire-provider.dart';
 import 'package:onlinenew/logic/main-app-provider.dart';
 import 'package:onlinenew/screens/home-screen.dart';
+import 'package:onlinenew/screens/noteScreens/note-list.dart';
 import 'package:onlinenew/screens/notify-screen.dart';
 import 'package:provider/provider.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -32,7 +34,8 @@ class MyApp extends StatelessWidget {
 
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (context)=>MainAppProvider()..getAllImages())
+        ChangeNotifierProvider(create: (context)=>MainAppProvider()..getAllImages()),
+        ChangeNotifierProvider(create: (context)=>FireProvider()..fetchingData())
       ],
     child:  MaterialApp(
       title: 'Flutter Demo',
@@ -41,7 +44,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeScreen(),
+      home: NoteList(),
       navigatorKey: navigatorKey,
       routes: {
         NotifyScreen.route:(context)=> NotifyScreen()
