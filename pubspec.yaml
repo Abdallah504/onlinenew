@@ -42,6 +42,10 @@ dependencies:
   firebase_messaging: ^15.2.1
   flutter_local_notifications: ^18.0.1
   cloud_firestore: ^5.6.2
+  easy_localization: ^3.0.7
+  file_picker: ^8.3.1
+  video_player: ^2.9.2
+  just_audio: ^0.9.45
 
 dev_dependencies:
   flutter_test:
@@ -66,8 +70,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/translations/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
